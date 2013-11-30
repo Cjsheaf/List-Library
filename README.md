@@ -16,3 +16,4 @@ How to compile:
  - Compile each of the *.c files into object files (.o file extension)
  - Run the resulting .o files through the linker of your choice to create a single object file. Tested and works with the linker provided as part of MinGW GCC package.
  - When using the library, include the appropriate header in your source, and provide the combined object file upon compilation.
+ - The batch file "CompileListLibrary.bat" will perform all of these functions on a Windows machine with GCC installed.
