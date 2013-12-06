@@ -11,3 +11,9 @@ Notes on implementation and use:
  - Uses void pointers internally, so stored data must be cast back to its original type upon retrieval.
  - The Linked List caches the last accessed node, so consecutive accesses aren't slowed down.
  - Included is a windows batch file named "CompileListLibrary.bat" that demonstrates the necessary commands to compile and link the library.
+
+How to compile:
+ - Compile each of the *.c files into object files (.o file extension)
+ - Run the resulting .o files through the linker of your choice to create a single object file. Tested and works with the linker provided as part of MinGW GCC package.
+ - When using the library, include the appropriate header in your source, and provide the combined object file upon compilation.
+ - The batch file "CompileListLibrary.bat" will perform all of these functions on a Windows machine with GCC installed.
